@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf14086919a839fe740e00554e4baff6",
+    "content-hash": "261912da7444978654bb6e505c114498",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -956,6 +956,53 @@
                 }
             ],
             "time": "2022-03-20T21:55:58+00:00"
+        },
+        {
+            "name": "jambasangsang/flash",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/singhateh/Laravel-Flash-Notification.git",
+                "reference": "91994a62ec0fcc7539089eededaf4f0a80e9c039"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/singhateh/Laravel-Flash-Notification/zipball/91994a62ec0fcc7539089eededaf4f0a80e9c039",
+                "reference": "91994a62ec0fcc7539089eededaf4f0a80e9c039",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jambasangsang\\Flash\\FlashNotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelFlash": "Jambasangsang\\Flash\\Facades\\LaravelFlash"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jambasangsang\\Flash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "alagie singhateh",
+                    "email": "3939919@gmail.com"
+                }
+            ],
+            "description": "This package will send flash notification to your application",
+            "support": {
+                "issues": "https://github.com/singhateh/Laravel-Flash-Notification/issues",
+                "source": "https://github.com/singhateh/Laravel-Flash-Notification/tree/v1.0.1"
+            },
+            "time": "2022-02-21T12:22:36+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7959,5 +8006,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

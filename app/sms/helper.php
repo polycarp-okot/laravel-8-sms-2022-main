@@ -44,7 +44,7 @@ class Helper{
         }
     }
 
-    public function getSelectedValue($key,$value){
+    public static function getSelectedValue($key,$value){
         return $key == $value? 'selected': '';
     }
 }

@@ -1,36 +1,35 @@
-<?php 
+<?php
 
 namespace App\sms\Services\Levels;
 
+use App\Models\Level;
 
-class levelServices{
+class levelServices
+{
 
     //get levelData function
-public function getLevelData(){
+    public function getLevelData()
+    {
+    }
 
+    //store level data using function below
+    public function storeLevelData($request)
+    {
 
-}
+        return Level::updateOrCreate(
+            ['id' => $request->edit_id],
+            [
+                'name' => $request->level_name,
+                'status' => $request->level_status,
+                'description' => $request->description
+            ]
+        );
+    }
 
-//store level data using function below
-public function storeLevelData($levelModel, $request){
+    //delete level data using function below
+    public function deleteLevelData($levelModel)
+    {
 
-    return $levelModel::updateOrCreate(['id' =>$request->edit_id],
-    [
-        'name'=>$request->level_name,
-        'status'=>$request->level_status,
-        'description'=>$request->description
-    ]);
-    
-
-}
-
-//delete level data using function below
-public function deleteLevelData($levelModel){
-
-    return $levelModel::delete();
-    
-
-}
-
-
+        return $levelModel->delete();
+    }
 }
